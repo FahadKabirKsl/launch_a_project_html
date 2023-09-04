@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Include Poppins font from Google Fonts -->
+    <a
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Launch a Project</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              Black_Russian: "#23262F",
+              Very_Dark: "#141416",
+              Tuna: "#353945",
+              Topaz: "#777E90",
+              Plaster: "#E9E9E9",
+              Whitesmoke: "#F5F5F5",
+              Malachite: "#0DB14B",
+              green: "#DEF7F2",
+              blue_light: "#E1F5FE8",
+              Pacific_Blue: "#0089D0",
+              off_white: "#0DB14B",
+              off_white_2: "#0089D0",
+            },
+            fontSize: {
+              //   sm: ['14px', '20px'],
+              base: ["16px", "24px"],
+              lg: ["18px", "24px"],
+              xl: ["24px", "40px"],
+              36: ["36px", "48px"],
+              56: ["56px", "64px"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      /* Apply Poppins font to all text elements */
+      body,
+      p,
+      h1,
+      h2,
+      h3,
+      a {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="text-Topaz p-4">
+      <div class="container mx-auto flex items-center justify-between">
+        <!-- Logo -->
+        <!-- <div class="text-2xl font-bold">Logo</div> -->
+        <img src="../images/logo.png" class="h-6 w-auto" />
+
+        <!-- Hamburger menu for mobile view -->
+        <div class="lg:hidden">
+          <button id="mobile-menu-button" class="text-Black_Russian">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navigation as -->
+        <div class="hidden lg:flex space-x-4">
+          <a href="#" class="my-auto">Why</a>
+          <a href="#" class="my-auto">Community</a>
+          <a href="#" class="my-auto">Blog</a>
+          <a href="#" class="my-auto">About Us</a>
+          <a href="#" class="font-bold my-auto">Login</a>
+          <a href="#" class="text-Malachite font-bold my-auto"
+            >Apply as Freelancer</a
+          >
+          <a
+            href="#"
+            class="bg-Pacific_Blue px-6 py-3 font-bold rounded-md text-white"
+            >Post a project</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile menu (hidden by default) -->
+    <div
+      id="mobile-menu"
+      class="lg:hidden hidden text-Topaz font-normal text-base"
+    >
+      <a href="#" class="block py-2 px-4">Why</a>
+      <a href="#" class="block py-2 px-4">Community</a>
+      <a href="#" class="block py-2 px-4">Blog</a>
+      <a href="#" class="block py-2 px-4">About Us</a>
+      <a href="#" class="block py-2 px-4">Login</a>
+      <a href="#" class="block py-2 px-4">Apply as Freelancer</a>
+      <a
+        href="#"
+        class="block bg-Pacific_Blue px-6 py-3 font-bold rounded-md text-white"
+        >Post a project</a
+      >
+    </div>
+    <!-- Hero -->
+    <div class="container mx-auto p-4">
+      <div class="lg:flex justify-between items-center py-10">
+        <div class="lg:w-1/2">
+          <p class="text-4xl lg:text-56 font-bold text-Black_Russian">
+            Hire the Top
+            <span class="font-light italic text-Malachite">Talent</span> for
+            your business
+          </p>
+          <p class="text-lg lg:text-xl text-Topaz text-justify py-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            commodo mattis turpis enim sed tempus magna nunc. Lorem mollis
+            ultricies consectetur semper.
+          </p>
+          <div class="flex flex-row">
+            <button
+              class="bg-Pacific_Blue text-white font-bold text-base px-6 py-3 rounded-md"
+            >
+              Post a Job
+            </button>
+            <button
+              class="bg-Malachite text-white font-bold text-base px-6 py-3 rounded-md ml-5"
+            >
+              Find works
+            </button>
+          </div>
+        </div>
+        <div class="lg:w-1/2 mt-10 lg:mt-0">
+          <img src="../images/hero_vector.png" class="w-full lg:h-auto" />
+        </div>
+      </div>
+    </div>
+    <!-- Trusted company section -->
+    <div class="bg-Whitesmoke">
+      <div class="container mx-auto p-4">
+        <div class="grid grid-cols-2 gap-4 lg:grid-cols-6 md:grid-cols-2 py-5">
+          <div
+            class="col-span-2 flex justify-center lg:justify-start md:justify-center"
+          >
+            <div class="flex flex-row">
+              <img
+                src="../images/company_lock.png"
+                class="my-auto w-auto h-8"
+              />
+              <p class="my-auto font-semibold text-base text-Topaz ml-3">
+                Trusted by Leading <br />Brands & Company
+              </p>
+            </div>
+          </div>
+          <div class="my-auto flex justify-center lg:justify-start">
+            <img src="../images/Google.png" class="w-auto h-8 my-auto" />
+          </div>
+          <div class="my-auto flex justify-center lg:justify-start">
+            <img src="../images/Github.png" class="w-auto h-8 my-auto" />
+          </div>
+          <div class="my-auto flex justify-center lg:justify-start">
+            <img src="../images/Godaddy.png" class="w-auto h-8 my-auto" />
+          </div>
+          <div class="my-auto flex justify-center lg:justify-start">
+            <img src="../images/Microsoft.png" class="w-auto h-8 my-auto" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hire -->
+    <div class="container mx-auto p-4">
+      <div class="py-10">
+        <div class="text-center">
+          <p class="text-36 font-semibold text-Black_Russian">
+            Need Hiring Top Talent?
+          </p>
+          <p class="text-lg font-normal text-Topaz lg:w-3/5 mx-auto pt-10">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant
+            massa cursus in magnis volutpat iaculis velit aliquet. Nunc ultrices
+            lacinia
+          </p>
+        </div>
+        <div class="pt-10">
+          <div class="grid grid-cols-2 gap-6 lg:grid-cols-4">
+            <div class="flex flex-col text-center">
+              <img src="../images/job.png" class="mx-auto w-auto h-10 mb-5" />
+              <p class="text-base font-normal text-Tuna mb-5">Step 1</p>
+              <p class="text-lg text-Very_Dark font-medium mb-3">Post a Job</p>
+              <p class="text-base font-normal text-Topaz text-center">
+                It’s free and easy to post a job. Simply fill in a title,
+                description and budget about your project.about your project.
+              </p>
+            </div>
+            <div class="flex flex-col text-center">
+              <img
+                src="../images/experts.png"
+                class="mx-auto w-auto h-10 mb-5"
+              />
+              <p class="text-base font-normal text-Tuna mb-5">Step 2</p>
+              <p class="text-lg text-Very_Dark font-medium mb-3">
+                Industry Experts
+              </p>
+              <p class="text-base font-normal text-Topaz text-center">
+                An expert on our team will work with you to understand your
+                goals, technical needs, and team dynamics.
+              </p>
+            </div>
+            <div class="flex flex-col text-center">
+              <img
+                src="../images/talents.png"
+                class="mx-auto w-auto h-10 mb-5"
+              />
+              <p class="text-base font-normal text-Tuna mb-5">Step 3</p>
+              <p class="text-lg text-Very_Dark font-medium mb-3">
+                Industry Experts
+              </p>
+              <p class="text-base font-normal text-Topaz text-center">
+                Within days, we'll introduce right talent for your project.
+                Average time to match is under 24 hours.
+              </p>
+            </div>
+            <div class="flex flex-col text-center">
+              <img src="../images/trust.png" class="mx-auto w-auto h-10 mb-5" />
+              <p class="text-base font-normal text-Tuna mb-5">Step 4</p>
+              <p class="text-lg text-Very_Dark font-medium mb-3">
+                Industry Experts
+              </p>
+              <p class="text-base font-normal text-Topaz text-center">
+                Work with your new team member on a trial basis (pay only if
+                satisfied), ensuring you hire the right people for the job.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Project -->
+    <div>
+      <div class="py-10">
+        <div class="flex flex-col lg:flex-row">
+          <div class="w-full lg:w-4/5">
+            <div
+              class="bg-gradient-to-tr from-green/30 to-off_white rounded-r-md flex-justify-end"
+            >
+              <div class="py-20 lg:pl-60">
+                <p class="text-36 font-medium Black_Russian pb-4">
+                  We've <br />earned lot of <br />achievements
+                </p>
+                <div class="flex flex-col">
+                  <div class="flex flex-row">
+                    <img src="../images/stars.png" class="w-auto h-6 my-auto" />
+                    <p class="text-xl font-semibold pt-1">4.9/5</p>
+                  </div>
+
+                  <p class="text-base font-normal text-Tuna pl-6">
+                    Clients rate professionals on Project
+                  </p>
+                </div>
+                <div class="flex flex-col">
+                  <div class="flex flex-row">
+                    <img
+                      src="../images/supports.png"
+                      class="w-auto h-6 my-auto"
+                    />
+                    <p class="text-xl font-semibold pt-1">24/h Supports</p>
+                  </div>
+
+                  <p class="text-base font-normal text-Tuna pl-6">
+                    We provide 24 hours best Supports
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mx-5"></div>
+          <img
+            src="../images/hire_vector.png"
+            class="w-40 h-auto block lg:hidden mx-auto"
+          />
+          <div class="hidden lg:block">
+            <div class="">
+              <div class="absolute z-30 -mt-10 -ml-40">
+                <img src="../images/hire_vector.png" class="w-[380px] h-auto" />
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full">
+            <div
+              class="bg-gradient-to-r from-green/50 to-off_white_2 rounded-l-md"
+            >
+              <div class="p-10 lg:pl-40">
+                <p class="text-36 font-medium Black_Russian pb-7">
+                  Why Everybody Choose <br /><span class="text-Pacific_Blue"
+                    >Launch</span
+                  >
+                  a <span class="text-Malachite">Project</span>?
+                </p>
+                <div class="flex flex-col">
+                  <div class="flex flex-row">
+                    <img
+                      src="../images/task_stars.png"
+                      class="w-auto h-6 my-auto"
+                    />
+                    <p class="text-xl font-semibold pt-1">Proof of quality</p>
+                  </div>
+
+                  <p class="text-base font-normal text-Tuna pl-6">
+                    Check any pro’s work samples, client reviews, and identity
+                    verification.
+                  </p>
+                </div>
+                <div class="flex flex-col">
+                  <div class="flex flex-row">
+                    <img
+                      src="../images/doller.png"
+                      class="w-auto h-6 my-auto"
+                    />
+                    <p class="text-xl font-semibold pt-1">
+                      No cost until you hire
+                    </p>
+                  </div>
+
+                  <p class="text-base font-normal text-Tuna pl-6">
+                    Interview potential fits for your job, negotiate rates, and
+                    only pay for work you approve.
+                  </p>
+                </div>
+                <div class="flex flex-col">
+                  <div class="flex flex-row">
+                    <img src="../images/lock.png" class="w-auto h-6 my-auto" />
+                    <p class="text-xl font-semibold pt-1">Safe and secure</p>
+                  </div>
+
+                  <p class="text-base font-normal text-Tuna pl-6">
+                    We help protect your data and privacy. We’re here with 24/7
+                    support if you need it.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center pt-20">
+          <p class="text-36 font-semibold text-Black_Russian pb-5">
+            Ready to get started?
+          </p>
+          <button
+            class="bg-Pacific_Blue text-white px-6 py-3 rounded-md font-bold"
+          >
+            Post a project now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="bg-Whitesmoke">
+      <div class="container mx-auto p-4">
+        <div class="py-10">
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            <div>
+              <div class="flex flex-col">
+                <div class="border-b border-Malachite">
+                  <p class="text-Black_Russian text-lg font-semibold mb-5">
+                    Most In-demand Talent
+                  </p>
+                </div>
+                <div class="flex flex-col pt-7">
+                  <a href="#" class="text-Topaz text-sm font-normal mb-4">
+                    iOS Developers
+                  </a>
+                  <a href="#" class="text-Topaz text-sm font-normal mb-4">
+                    Front-end Developers
+                  </a>
+                  <a href="#" class="text-Topaz text-sm font-normal mb-4">
+                    UX Designers
+                  </a>
+                  <a href="#" class="text-Topaz text-sm font-normal mb-4">
+                    UI Designers
+                  </a>
+                  <a href="#" class="text-Topaz text-sm font-normal mb-4">
+                    Financial Modeling Consultants
+                  </a>
+                  <a href="#" class="text-Topaz text-sm font-normal mb-4">
+                    nterim CFOs
+                  </a>
+                  <a href="#" class="text-Topaz text-sm font-normal mb-4">
+                    Digital Project Managers
+                  </a>
+                  <a href="#" class="text-Topaz text-sm font-normal">
+                    AWS Experts
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex flex-col">
+                <div class="border-b border-Malachite">
+                  <p class="text-Black_Russian text-lg font-semibold mb-5">
+                    Most In-demand Talent
+                  </p>
+                </div>
+                <div class="flex flex-col pt-7">
+                  <a href="#" class="text-Topaz text-sm font-normal mb-4">
+                    Clients
+                  </a>
+                  <a href="#" class="text-Topaz text-sm font-normal mb-4">
+                    Freelance Developers
+                  </a>
+                  <a href="#" class="text-Topaz text-sm font-normal mb-4">
+                    Freelance Designers
+                  </a>
+                  <a href="#" class="text-Topaz text-sm font-normal mb-4">
+                    Freelance Finance Experts
+                  </a>
+                  <a href="#" class="text-Topaz text-sm font-normal mb-4">
+                    Freelance Project Managers
+                  </a>
+                  <a href="#" class="text-Topaz text-sm font-normal mb-4">
+                    Freelance Product Managers
+                  </a>
+
+                  <a href="#" class="text-Topaz text-sm font-normal mb-4">
+                    Freelance Jobs
+                  </a>
+                  <a href="#" class="text-Topaz text-sm font-normal mb-4">
+                    Specialized Services
+                  </a>
+                  <a href="#" class="text-Topaz text-sm font-normal mb-4">
+                    Utilities & Tools
+                  </a>
+                  <a href="#" class="text-Topaz text-sm font-normal">
+                    About Us
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex flex-col">
+                <div class="border-b border-Malachite">
+                  <p class="text-Black_Russian text-lg font-semibold mb-5">
+                    Contacts
+                  </p>
+                </div>
+                <div class="flex flex-col pt-7">
+                  <a href="#" class="text-Topaz text-sm font-normal mb-4">
+                    Contact Us
+                  </a>
+                  <a href="#" class="text-Topaz text-sm font-normal mb-4">
+                    Press Center
+                  </a>
+                  <a href="#" class="text-Topaz text-sm font-normal mb-4">
+                    Careers
+                  </a>
+                  <a href="#" class="text-Topaz text-sm font-normal mb-4">
+                    FAQ
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex flex-col">
+                <div class="border-b border-Malachite">
+                  <p class="text-Black_Russian text-lg font-semibold mb-5">
+                    Social
+                  </p>
+                </div>
+                <div class="flex flex-col pt-7">
+                  <a href="#" class="text-Topaz text-sm font-normal mb-4">
+                    <image
+                      src="../images/Google_Download.png"
+                      alt="google.png"
+                      class="w-auto h-10"
+                    />
+                  </a>
+                  <a href="#" class="text-Topaz text-sm font-normal mb-4">
+                    <image
+                      src="../images/Apple_Download.png"
+                      alt="apple.png"
+                      class="w-auto h-10"
+                    />
+                  </a>
+                  <div class="flex flex-row">
+                    <a href="#">
+                      <image
+                        src="../images/facebook.png"
+                        alt="facebook.png"
+                        class="w-auto h-6"
+                      />
+                    </a>
+                    <a href="#" class="ml-3">
+                      <image
+                        src="../images/twitter.png"
+                        alt="twitter.png"
+                        class="w-auto h-6"
+                      />
+                    </a>
+                    <a href="#" class="mx-3">
+                      <image
+                        src="../images/youtube.png"
+                        alt="youtube.png"
+                        class="w-auto h-6"
+                      />
+                    </a>
+                    <a href="#">
+                      <image
+                        src="../images/instagram.png"
+                        alt="instagram.png"
+                        class="w-auto h-6"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-Plaster">
+      <div class="container mx-auto p-4">
+        <div class="py-5">
+          <div class="flex flex-col lg:flex-row">
+            <div class="flex flex-row w-full">
+              <Image src="../images/logo.png" alt="logo.png" class="w-auto h-5" />
+              <p class="text-base font-normal text-Black_Russian pb-0 pl-2 mb-0">
+                © - 2022 Global Inc.
+              </p>
+            </div>
+            <div class="w-full pt-5 lg:pt-0">
+              <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                <a
+                  href="#"
+                  class="text-base font-normal text-Black_Russian"
+                >
+                  Terms of Service
+                </a>
+                <a
+                  href="#"
+                  class="text-base font-normal text-Black_Russian"
+                >
+                  Privacy Policy
+                </a>
+                <a
+                  href="#"
+                  class="text-base font-normal text-Black_Russian"
+                >
+                  Cookie Settings
+                </a>
+                <a
+                  href="#"
+                  class="text-base font-normal text-Black_Russian"
+                >
+                  Accessibility
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- script -->
+    <script>
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
