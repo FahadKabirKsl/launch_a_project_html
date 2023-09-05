@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Include Poppins font from Google Fonts -->
-    <a
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./custom.css" /> 
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Launch a Project</title>
@@ -23,11 +23,11 @@
               Plaster: "#E9E9E9",
               Whitesmoke: "#F5F5F5",
               Malachite: "#0DB14B",
-              green: "#DEF7F2",
-              blue_light: "#E1F5FE8",
+              off_white: "#DEF7F2",
+              blue_light: "#A7D6EE",
               Pacific_Blue: "#0089D0",
-              off_white: "#0DB14B",
-              off_white_2: "#0089D0",
+              green : "#B5E3C9",
+              off_white_2: "#E4F3FB",
             },
             fontSize: {
               //   sm: ['14px', '20px'],
@@ -42,26 +42,20 @@
       };
     </script>
     <style>
-      /* Apply Poppins font to all text elements */
       body,
       p,
       h1,
       h2,
-      h3,
-      a {
+      h3,span{
         font-family: "Poppins", sans-serif;
       }
     </style>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="text-Topaz p-4">
-      <div class="container mx-auto flex items-center justify-between">
-        <!-- Logo -->
-        <!-- <div class="text-2xl font-bold">Logo</div> -->
+    <nav class="text-Topaz w-full">
+      <div class="container mx-auto py-4 px-20 flex items-center w-full justify-between">
         <img src="../images/logo.png" class="h-6 w-auto" />
-
-        <!-- Hamburger menu for mobile view -->
         <div class="lg:hidden">
           <button id="mobile-menu-button" class="text-Black_Russian">
             <svg
@@ -80,8 +74,6 @@
             </svg>
           </button>
         </div>
-
-        <!-- Navigation as -->
         <div class="hidden lg:flex space-x-4">
           <a href="#" class="my-auto">Why</a>
           <a href="#" class="my-auto">Community</a>
@@ -97,9 +89,9 @@
             >Post a project</a
           >
         </div>
+
       </div>
     </nav>
-
     <!-- Mobile menu (hidden by default) -->
     <div
       id="mobile-menu"
@@ -118,20 +110,20 @@
       >
     </div>
     <!-- Hero -->
-    <div class="container mx-auto p-4">
-      <div class="lg:flex justify-between items-center py-10">
-        <div class="lg:w-1/2">
-          <p class="text-4xl lg:text-56 font-bold text-Black_Russian">
+    <div class="container mx-auto px-20">
+      <div class="lg:flex justify-between py-28 ">
+        <div class="lg:w-[544px] lg:h-[322px] my-auto">
+          <p class="text-4xl lg:text-56 font-bold text-Black_Russian ">
             Hire the Top
-            <span class="font-light italic text-Malachite">Talent</span> for
+            <span class="font-light italic text-Malachite">Talent</span> <br/>for
             your business
           </p>
-          <p class="text-lg lg:text-xl text-Topaz text-justify py-5">
+          <p class="text-lg text-Topaz text-justify py-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
             commodo mattis turpis enim sed tempus magna nunc. Lorem mollis
             ultricies consectetur semper.
           </p>
-          <div class="flex flex-row">
+          <div class="flex flex-row ">
             <button
               class="bg-Pacific_Blue text-white font-bold text-base px-6 py-3 rounded-md"
             >
@@ -144,15 +136,13 @@
             </button>
           </div>
         </div>
-        <div class="lg:w-1/2 mt-10 lg:mt-0">
-          <img src="../images/hero_vector.png" class="w-full lg:h-auto" />
-        </div>
+          <img src="../images/hero_vector.png" class="lg:w-[544px] lg:h-[370px] " />
       </div>
     </div>
     <!-- Trusted company section -->
     <div class="bg-Whitesmoke">
-      <div class="container mx-auto p-4">
-        <div class="grid grid-cols-2 gap-4 lg:grid-cols-6 md:grid-cols-2 py-5">
+      <div class="container mx-auto px-20">
+        <div class="grid grid-cols-2 gap-4 lg:grid-cols-6 md:grid-cols-2 py-7">
           <div
             class="col-span-2 flex justify-center lg:justify-start md:justify-center"
           >
@@ -182,20 +172,20 @@
       </div>
     </div>
     <!-- Hire -->
-    <div class="container mx-auto p-4">
-      <div class="py-10">
+    <div class="container mx-auto px-20">
+      <div class="py-28">
         <div class="text-center">
           <p class="text-36 font-semibold text-Black_Russian">
             Need Hiring Top Talent?
           </p>
-          <p class="text-lg font-normal text-Topaz lg:w-3/5 mx-auto pt-10">
+          <p class="text-lg font-normal text-Topaz lg:w-3/5 mx-auto pt-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant
             massa cursus in magnis volutpat iaculis velit aliquet. Nunc ultrices
             lacinia
           </p>
         </div>
-        <div class="pt-10">
-          <div class="grid grid-cols-2 gap-6 lg:grid-cols-4">
+        <div class="pt-16 mt-1">
+          <div class="grid grid-cols-2 gap-8 lg:grid-cols-4">
             <div class="flex flex-col text-center">
               <img src="../images/job.png" class="mx-auto w-auto h-10 mb-5" />
               <p class="text-base font-normal text-Tuna mb-5">Step 1</p>
@@ -249,130 +239,104 @@
       </div>
     </div>
     <!-- Project -->
-    <div>
-      <div class="py-10">
-        <div class="flex flex-col lg:flex-row">
-          <div class="w-full lg:w-4/5">
-            <div
-              class="bg-gradient-to-tr from-green/30 to-off_white rounded-r-md flex-justify-end"
-            >
-              <div class="py-20 lg:pl-60">
-                <p class="text-36 font-medium Black_Russian pb-4">
-                  We've <br />earned lot of <br />achievements
-                </p>
-                <div class="flex flex-col">
-                  <div class="flex flex-row">
-                    <img src="../images/stars.png" class="w-auto h-6 my-auto" />
-                    <p class="text-xl font-semibold pt-1">4.9/5</p>
-                  </div>
 
-                  <p class="text-base font-normal text-Tuna pl-6">
-                    Clients rate professionals on Project
-                  </p>
-                </div>
-                <div class="flex flex-col">
-                  <div class="flex flex-row">
-                    <img
-                      src="../images/supports.png"
-                      class="w-auto h-6 my-auto"
-                    />
-                    <p class="text-xl font-semibold pt-1">24/h Supports</p>
-                  </div>
-
-                  <p class="text-base font-normal text-Tuna pl-6">
-                    We provide 24 hours best Supports
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mx-5"></div>
-          <img
-            src="../images/hire_vector.png"
-            class="w-40 h-auto block lg:hidden mx-auto"
-          />
-          <div class="hidden lg:block">
-            <div class="">
-              <div class="absolute z-30 -mt-10 -ml-40">
-                <img src="../images/hire_vector.png" class="w-[380px] h-auto" />
-              </div>
-            </div>
-          </div>
-
-          <div class="w-full">
-            <div
-              class="bg-gradient-to-r from-green/50 to-off_white_2 rounded-l-md"
-            >
-              <div class="p-10 lg:pl-40">
-                <p class="text-36 font-medium Black_Russian pb-7">
-                  Why Everybody Choose <br /><span class="text-Pacific_Blue"
-                    >Launch</span
-                  >
-                  a <span class="text-Malachite">Project</span>?
-                </p>
-                <div class="flex flex-col">
-                  <div class="flex flex-row">
-                    <img
-                      src="../images/task_stars.png"
-                      class="w-auto h-6 my-auto"
-                    />
-                    <p class="text-xl font-semibold pt-1">Proof of quality</p>
-                  </div>
-
-                  <p class="text-base font-normal text-Tuna pl-6">
-                    Check any pro’s work samples, client reviews, and identity
-                    verification.
-                  </p>
-                </div>
-                <div class="flex flex-col">
-                  <div class="flex flex-row">
-                    <img
-                      src="../images/doller.png"
-                      class="w-auto h-6 my-auto"
-                    />
-                    <p class="text-xl font-semibold pt-1">
-                      No cost until you hire
-                    </p>
-                  </div>
-
-                  <p class="text-base font-normal text-Tuna pl-6">
-                    Interview potential fits for your job, negotiate rates, and
-                    only pay for work you approve.
-                  </p>
-                </div>
-                <div class="flex flex-col">
-                  <div class="flex flex-row">
-                    <img src="../images/lock.png" class="w-auto h-6 my-auto" />
-                    <p class="text-xl font-semibold pt-1">Safe and secure</p>
-                  </div>
-
-                  <p class="text-base font-normal text-Tuna pl-6">
-                    We help protect your data and privacy. We’re here with 24/7
-                    support if you need it.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div class="bg-image">
+  <div class="flex justify-between container mx-auto px-20 items-center h-screen">
+    <div class="flex flex-col">
+      <p class="text-3xl font-medium text-black pb-4">
+        We've <br />earned lot of <br />achievements
+      </p>
+      <div class="flex flex-col ">
+        <div class="flex flex-row">
+          <img src="../images/stars.png" class="w-auto h-6 my-auto" />
+          <p class="text-xl font-semibold pt-1 pl-3">4.9/5</p>
         </div>
-        <div class="text-center pt-20">
-          <p class="text-36 font-semibold text-Black_Russian pb-5">
-            Ready to get started?
-          </p>
-          <button
-            class="bg-Pacific_Blue text-white px-6 py-3 rounded-md font-bold"
+        <p class="text-base font-normal text-gray-700  pl-9">
+          Clients rate professionals on Project
+        </p>
+      </div>
+      <div class="flex flex-col pt-2">
+        <div class="flex flex-row">
+          <img src="../images/supports.png" class="w-auto h-6 my-auto" />
+          <p class="text-xl font-semibold pt-1 pl-3">24/h Supports</p>
+        </div>
+        <p class="text-base font-normal text-gray-700 pl-9">
+          We provide 24 hours best Supports
+        </p>
+      </div>
+    </div>
+    <div class="flex justify-end">
+      <div class="w-3/5">
+        <p class="text-3xl font-medium text-black pb-7">
+          Why Everybody Choose <br /><span class="text-Pacific_Blue font-bold"
+            >Launch</span
           >
-            Post a project now
-          </button>
+          a <span class="text-Malachite font-bold">Project</span>?
+        </p>
+        <div class="flex flex-col">
+          <div class="flex flex-row">
+            <img
+              src="../images/task_stars.png"
+              class="w-auto h-6 my-auto"
+            />
+            <p class="text-xl font-semibold pt-1 pl-3">Proof of quality</p>
+          </div>
+          <p class="text-base font-normal text-gray-700 pl-9">
+            Check any pro’s work samples, client reviews, and identity
+            verification.
+          </p>
+        </div>
+        <div class="flex flex-col pt-3">
+          <div class="flex flex-row">
+            <img
+              src="../images/doller.png"
+              class="w-auto h-6 my-auto"
+            />
+            <p class="text-xl font-semibold pt-1 pl-3">
+              No cost until you hire
+            </p>
+          </div>
+          <p class="text-base font-normal text-gray-700 pl-9">
+            Interview potential fits for your job, negotiate rates, and
+            only pay for work you approve.
+          </p>
+        </div>
+        <div class="flex flex-col pt-3">
+          <div class="flex flex-row">
+            <img src="../images/lock.png" class="w-auto h-6 my-auto" />
+            <p class="text-xl font-semibold pt-1 pl-3">Safe and secure</p>
+          </div>
+          <p class="text-base font-normal text-gray-700 pl-9">
+            We help protect your data and privacy. We’re here with 24/7
+            support if you need it.
+          </p>
         </div>
       </div>
     </div>
+  </div>
+</div>
+<div class="text-center pb-28">
+  <p class="text-36 font-semibold text-Black_Russian pb-5">
+    Ready to get started?
+  </p>
+  <button
+    class="bg-Pacific_Blue text-white px-6 py-3 rounded-md font-bold"
+  >
+    Post a project now
+  </button>
+</div>
+<div>
+
+</div>
+
+    
+    
 
     <!-- Footer -->
     <div class="bg-Whitesmoke">
-      <div class="container mx-auto p-4">
-        <div class="py-10">
-          <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="container mx-auto px-20">
+        <div class="py-28">
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
               <div class="flex flex-col">
                 <div class="border-b border-Malachite">
@@ -536,8 +500,8 @@
       </div>
     </div>
     <div class="bg-Plaster">
-      <div class="container mx-auto p-4">
-        <div class="py-5">
+      <div class="container mx-auto px-20">
+        <div class="py-6">
           <div class="flex flex-col lg:flex-row">
             <div class="flex flex-row w-full">
               <Image src="../images/logo.png" alt="logo.png" class="w-auto h-5" />
@@ -546,7 +510,7 @@
               </p>
             </div>
             <div class="w-full pt-5 lg:pt-0">
-              <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+              <div class="flex justify-between">
                 <a
                   href="#"
                   class="text-base font-normal text-Black_Russian"

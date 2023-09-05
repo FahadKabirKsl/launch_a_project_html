@@ -1,0 +1,10 @@
+
+.bg-image {
+    background-image: url("./images/bg_project.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Adjust the height as needed */
+    
+  }
+  
